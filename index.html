@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .main {width: 100%; height: 100vh; background-color: hsl(30, 38%, 92%); display: flex; justify-content: center; align-items: center; font-family: 'Montserrat', sans-serif;}
+    .attribution {width: 550px; height: 450px; background-color: white; border-radius:15px; }
+    .image {}
+    .img {width: 54.5%; height: 54.5%; border-radius:15px 0 0 15px;} 
+    .content {flex-direction: column; display:flex; }
+    .perfume { position: relative; bottom: 420px; text-align: center; margin-left: 33%; font-size: 10px; letter-spacing: 5px;}
+    .header { font-size: 28px; font-family: 'Fraunces', serif; position:relative; bottom: 430px;  text-align:left; margin-left:49%; padding-left: 10%; color: hsl(212, 21%, 14%);}
+    .paragraf {position:relative; bottom: 400px;  text-align:left; position: relative; bottom: 430px; margin-left: 59%; font-size: 12px; line-height: 20px;}
+    .price {font-family: 'Fraunces', serif;  position: relative; bottom: 400px; margin-left:59.5%; font-size: 28px; color:hsl(158, 36%, 37%); }
+    .oldprice{font-family: 'Montserrat', sans-serif; position: relative; bottom: 22px; margin-left:56%; font-size: 10px; color:black;}
+    .cart-row {display: flex; flex-direction: row; width: 195px; height: 40px; justify-content: space-between; position: relative; bottom: -15px; margin-left: 0%; background-color: hsl(165, 12%, 26%); border-radius: 8px ;}
+    .cart-row:hover {background-color: hsl(158, 36%, 37%);}
+    .cart-column {display:flex; flex-direction:column; }
+    .icon {width: 25px; height: 25px; margin-top: 0%; margin-left: 26%;}
+    .addtocart {font-family: 'Montserrat', sans-serif; color: white; font-weight: bold; font-size: 10px; margin:4px; margin-right: 58px;}
+
+    
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="attribution">
+      <div class="image">
+        <img class="img" src="./images/image-product-desktop.jpg"/>
+        </div>
+        <div class="perfume">
+          PERFUME
+        </div>
+        <div class="content">
+          <div class="header">
+            <p>Gabrielle<br>
+              Essence Eau<br>
+              De Parfum</p>
+          </div>
+          <div class="paragraf">
+            A floral, solar and voluptuous <br>
+            interpretation composed by<br> 
+            Olivier Polge, Perfumer-Creator <br>
+            for the House of CHANEL.<br>
+          </div>
+            <div class="price">
+            $149.99 
+            <div class="oldprice">
+            <s>$169.99</s>
+          </div>
+
+          <div class="cart-row">
+            <div class="icon">
+              <img class="img" src="./images/icon-cart.svg"/>  
+              </div>
+              <div class="cart-column">
+              <div class="addtocart">
+              <p>Add to Cart</p> 
+            </div>
+          </div>
+          </div>      
+        </div>
+  </div>
+</body>
+</html>
